@@ -65,6 +65,8 @@ const upgradeDb = (filePath, res) => {
     });
   };
 
+//creating the server and assigning it to a variable called "app". Trying to emulate what was in week 11 package. Trying to make things work.
+
   const app = http.createServer(handleRequest);
 
 //Starts server to begin listening
