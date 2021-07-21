@@ -7,7 +7,7 @@ const fs = require('fs');
 //Setting up the Express App
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env || 3000;
 
 // Setting up the Express app to handle data parsing
 app.use(express.urlencoded({extended: true}));
