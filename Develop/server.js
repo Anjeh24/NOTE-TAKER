@@ -65,7 +65,7 @@ const upgradeDb = (filePath, res) => {
     });
   };
 
-  const server = http.createServer(handleRequest);
+  const app = http.createServer(handleRequest);
 
 //Starts server to begin listening
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
