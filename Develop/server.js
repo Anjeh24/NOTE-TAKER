@@ -47,7 +47,7 @@ app.post('/api/notes', (req, res) => {
     return console.log("Added" + newNotes.title);
   });
 
-  //To delete an entry / specifis note
+  //To delete an entry / specific note
 
   app.delete("/api/notes/", => (req, res) {
     notes.splice(req.params)
@@ -55,7 +55,7 @@ app.post('/api/notes', (req, res) => {
     console.log("Deleted"+req.params.id);
   });
 
-//Should keep the json file up to date whenever a note is added or deleted (That is what I am tryin to do here.)
+//Should keep the json file up to date whenever a note is added or deleted (That is what I am trying to do here.)
 
 const upgradeDb = (filePath, res) => {
     return fs.writeFile(`${__dirname}${filePath}`, (err, data) => {
@@ -64,6 +64,8 @@ const upgradeDb = (filePath, res) => {
       res.end(data);
     });
   };
+
+  const server = http.createServer(handleRequest);
 
 //Starts server to begin listening
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
