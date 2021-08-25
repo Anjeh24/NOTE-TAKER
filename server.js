@@ -67,3 +67,6 @@ app.delete("/api/notes/:uuid", (req, res) =>{
 });
 //listener
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+
+
+//Credits; besides the beginning code, some was extracted from week11 school work and some modified with lots of gratitude from lanceB on github.
