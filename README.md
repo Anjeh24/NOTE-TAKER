@@ -68,6 +68,9 @@ Screen shots of deployed APP:
 
 ![image](https://user-images.githubusercontent.com/82301113/130863204-209b3664-e42c-41f7-9694-0a41738c1c80.png)
 
+Technologies used: Express.js, html for front-end, and node for launch server.
+
+License: MIT
 
 
 
