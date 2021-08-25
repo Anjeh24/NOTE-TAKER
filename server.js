@@ -12,12 +12,12 @@ const { v4: uuidv4 } = require('uuid');
 //Setting up the Express App
 
 const app = express();
-const PORT = process.env || 3000;
+const PORT = process.env.PORT || 3000;
 
 // Setting up the Express app to handle data parsing
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.static(__dirname, "Develop/public"));
+//app.use(express.static(__dirname, "Develop/public"));
 
 //File routes for css and js to load
 //this is for css
